@@ -1,0 +1,83 @@
+ body {
+    font-family: Arial, sans-serif;
+    background-image: url("../imagenes/fondo.png");
+    color: #fff;
+  }
+
+  .navbar {
+    opacity: 0.5;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .album-hero {
+    background-color: #28284f;
+    padding: 50px 0;
+  }
+  
+  .album-image img {
+    max-width: 300px;
+    border-radius: 15px;
+  }
+
+   
+  footer {
+    margin-top: 50px;
+  }
+
+.carousel-item {
+  height: 75vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+  /* Estilos para las tarjetas de álbum */
+.album-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #28284f;
+  }
+  
+  .album-card:hover {
+    transform: scale(1.05); /* Agranda ligeramente la tarjeta al hacer hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  }
+  
+  /* Estilo para los títulos dentro de las tarjetas */
+  .album-card .card-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive para mejorar la disposición en pantallas pequeñas */
+  @media (max-width: 576px) {
+    .album-card {
+      margin-bottom: 20px;
+    }
+  }
+  
