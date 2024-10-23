@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coldplay Fanpage</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
   <!-- Navegación -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">COLDPLAY FANPAGE</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,69 +29,95 @@
             <a class="nav-link" href="tour.html">Tour</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-            <input class="form-control me-2" type="buscar" placeholder="Buscar" aria-label="Buscar">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
-          </form>
       </div>
     </div>
   </nav>
 
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="imagenes/moon-music.png" class="d-block w-100" alt="Portada de álbum Moon Music">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>MOON MUSIC</h5>
-          <p>Nuevo álbum ya disponible. Escuchalo ahora.</p>
+  <!-- Noticias -->
+   <section lc-helper="background" class="container-fluid">
+    <div class="p-5 text-center bg-image rounded-3 img-hero">
+        <div class="mask borroso">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white">
+              <h1 class="mb-3">Moon Music</h1>
+              <h4 class="mb-3">¡Nuevo álbum ya disponible!</h4>
+              <a data-mdb-ripple-init="" 
+                class="btn btn-outline-light btn-lg" href="https://open.spotify.com/intl-es/album/5SGtrmYbIo0Dsg4kJ4qjM6?si=585d7cec1f0944e0" role="button">Escuchar ahora
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"/>
+                  </svg>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="..." class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="..." class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+  </section>
 
-  <!-- Contenido dinámico al hacer scroll -->
-  <section id="info-banda" class="py-5 text-center">
+  <!-- Información de la banda -->
+  <section class=" container-xxl py-5">
     <h2>Sobre Coldplay</h2>
-    <div id="banda-contenido" class="container">
-      <!-- Aquí Vue.js cargará más información sobre la banda -->
-    </div>
+    <div class="swiper info">
+        <div class="parallax-bg border border-info shadow mb-5" data-swiper-parallax="-23%"></div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="title" data-swiper-parallax="-300">Sus comienzos</div>
+            <div class="text" data-swiper-parallax="-100">
+              <p>
+                Coldplay es una banda británica de pop rock formada en Londres en 1997.
+                Está integrada por Chris Martin (vocalista principal y pianista), Jonny Buckland (guitarrista),
+                Guy Berryman (bajista), Will Champion (baterista y vocalista secundario) y Phil Harvey (director creativo).
+                Se conocieron en el University College London y comenzaron a tocar música juntos desde 1997 hasta 1998,
+                inicialmente llamándose a sí mismos Big Fat Noises y luego Starfish.
+                </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="text" data-swiper-parallax="-100">
+                <p>
+                    Después de lanzar de forma independiente un EP, Safety (1998), Coldplay firmó con Parlophone en 1999.
+                    El álbum debut de la banda, Parachutes (2000), incluyó su exitoso sencillo «Yellow» y recibió un Brit Award por Álbum Británico del Año,
+                    un Premio Grammy al Mejor Álbum de Música Alternativa y nominación al Premio Mercury.
+                    Su segundo álbum, A Rush of Blood to the Head (2002),
+                    ganó los mismos elogios e incluyó los sencillos «The Scientist» y «Clocks», y este último ganó un premio Grammy por Grabación del año.
+                </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="text" data-swiper-parallax="-100">
+                <p>
+                    Destacado por una producción problemática, el tercer álbum de la banda, X&Y (2005), fue el más vendido del año en todo el mundo, un logro repetido por su sucesor,
+                    Viva la Vida or Death and All His Friends (2008), que los vio explorar nuevos estilos musicales tras la finalización de lo que se consideró una trilogía.
+                    Recibió un premio Grammy al Mejor Álbum de Rock y su primera nominación al Álbum del Año, mientras que la canción principal se convirtió en el primer sencillo de un grupo británico
+                    en alcanzar el número uno tanto en el Reino Unido como en los Estados Unidos en el siglo XXI.
+                </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-dark text-light text-center py-3">
-    <p>&copy; 2024 Coldplay Fanpage. Todos los derechos reservados.</p>
-    <a href="sitemap.html" class="text-light">Mapa del sitio</a>
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+    <p class="col-md-4 mb-0 text-body-secondary text-light">Coldplay Fanpage</p>
+
+    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+    </a>
+
+    <ul class="nav col-md-4 justify-content-end">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Inicio</a></li>
+      <li class="nav-item"><a href="discografia/index.html" class="nav-link px-2 text-body-secondary">Discografía</a></li>
+      <li class="nav-item"><a href="tour/index.html" class="nav-link px-2 text-body-secondary">Tour</a></li>
+      <li class="nav-item"><a href="mapa.html" class="nav-link px-2 text-body-secondary">Mapa del sitio</a></li>
+      <li class="nav-item"><a href="miscelanea.html" class="nav-link px-2 text-body-secondary">Miscelánea</a></li>
+    </ul>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-  <script src="js/App.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/galeria.js"></script>
 </body>
 </html>
