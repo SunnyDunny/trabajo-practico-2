@@ -1,6 +1,13 @@
+    html {
+        height: 100%;
+    }
+    
     body {
-    font-family: Arial, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     background-image: url("../imagenes/fondo.png");
+    background-size: cover;
     color: #fff;
     scroll-behavior: smooth;
   }
@@ -31,12 +38,19 @@
     font-size: 1.5rem;
     font-weight: bold;
   }
-  
+
+  a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: rgb(13, 218, 241);
+  }
 /* ----------------------------------------------------------------*/
 
   /* Estilos para el footer */
   footer {
     background-color: #080832;
+    opacity: 0.5;
     padding: 2em;
   }
 
@@ -136,7 +150,7 @@
   }
   
   .album-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
   
