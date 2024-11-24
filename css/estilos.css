@@ -40,6 +40,48 @@
     text-align: center;
     padding: 1em;
   }
+
+  /*----------------------------------------------------------------*/
+  /* Estilos carrusel */
+  .card img {
+    height: 200px;
+    object-fit:scale-down;
+  }
+  
+  .carousel-inner {
+    padding: 2em 0;
+    background-color: #19194b;
+  }
+
+  .card-carrusel {
+    background-color: #ddd0f3;
+  }
+  
+/* ----------------------------------------------------------------*/
+
+  /* Estilos galería de misc usando Fancybox */
+  /* Miniaturas con tamaño uniforme */
+.thumbnail {
+  width: 250px; /* Define el ancho deseado */
+  height: 250px; /* Define el alto deseado */
+  display: block;
+  overflow: hidden;
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* Efecto hover */
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantiene la proporción */
+}
+
+.thumbnail:hover {
+  transform: scale(1.05); /* Zoom al pasar el mouse */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
 /* ----------------------------------------------------------------*/
 
   /* Estilos para el menú de navegación */
