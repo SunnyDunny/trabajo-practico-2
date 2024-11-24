@@ -19,6 +19,17 @@
     padding: 0.5em 0;
     margin: auto;
   }
+
+  article {
+    background-color: #172347;
+    box-shadow: #fde9f4;
+    color: #f9f9f9;
+    border-radius: 8px;
+    padding: 2em;
+    margin: auto;
+  }
+
+
   
   section.container-fluid {
     background: rgb(131,58,180);
@@ -157,6 +168,11 @@ legend {
   color: #333;
 }
 
+label {
+  font-weight: bold;
+  padding: 0.5em;
+}
+
 form .form-control {
   border: 2px solid #ced4da;
   border-radius: 8px;
@@ -177,9 +193,114 @@ textarea {
   resize: none;
 }
 
-
 /*----------------------------------------------------------------*/
-  
+
+/* Estilos para las páginas de álbunes */
+
+.p-parachutes {
+  background-image: url("../discografia/parachutes/imagenes/parachutes.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.p-xy {
+  background-image: url("../discografia/xy/imagenes/x-y.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.p-viva {
+  background-image: url("../discografia/viva-la-vida-or-death-and-all-his-friends/imagenes/viva-la-vida.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.p-prospekts {
+  background-image: url("../discografia/prospekts-march/imagenes/prospekts-march.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.p-myloxyloto {
+  background-image: url("../discografia/mylo-xyloto/imagenes/mylo-xyloto.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.p-spheres {
+  background-image: url("../discografia/music-of-the-spheres/imagenes/music-of-the-spheres.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.p-moonmusic {
+  background-image: url("../discografia/moon-music/imagenes/moon-music.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.p-buenosaires {
+  background-image: url("../discografia/live-in-buenos-aires/imagenes/live-in-buenos-aires.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.p-live2012 {
+  background-image: url("../discografia/live-2012/imagenes/live-2012.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.p-live2003 {
+  background-image: url("../discografia/live-2003/imagenes/live-2003.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.p-leftright {
+  background-image: url("../discografia/leftrightleftrightleft/imagenes/left-right-left-right-left.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.p-kaleidoscope {
+  background-image: url("../discografia/kaleidoscope-ep/imagenes/kaleidoscope.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.p-live2014 {
+  background-image: url("../discografia/ghost-stories-live-2014/imagenes/ghost-stories-live.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.p-ghoststories { 
+  background-image: url("../discografia/ghost-stories/imagenes/ghost-stories.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.p-everydaylife {
+  background-image: url("../discografia/everyday-life/imagenes/everyday-liffe.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.p-arush {
+  background-image: url("../discografia/a-rush-of-blood-to-the-head/imagenes/a-rush-of-blood-to-the-head.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.p-fullofdreams {
+  background-image: url("../discografia/a-head-full-of-dreams/imagenes/a-head-full-of-dreams.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*----------------------------------------------------------------*/
+
   @media (max-width: 576px) {
     .album-card {
       margin-bottom: 20px;

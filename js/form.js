@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
     // Validación del formulario y almacenamiento
     document.querySelector('#contactForm').addEventListener('submit', function (event) {
-      event.preventDefault(); // Prevenir envío tradicional
+      event.preventDefault();
       if (this.checkValidity()) {
         localStorage.setItem('formSubmitted', 'true'); // Marcar como enviado
         window.location.href = 'index.html'; // Redirigir a la página de inicio
