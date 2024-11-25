@@ -134,6 +134,32 @@
   }
 /* ----------------------------------------------------------------*/
 
+/* Estilos para la sección de tour */
+#hero-banner {
+  background: url('../imagenes/coldplay2.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero h1 {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+.table thead {
+  background-color: #ffc107;
+  color: #000;
+}
+.btn-ticket {
+  background-color: #0d6efd;
+  color: white;
+}
+.btn-ticket:hover {
+  background-color: #f200b1;
+  color: white;
+}
+
 /* estilos para la biblioteca js swiper */
 .swiper {
     width: 100%;
